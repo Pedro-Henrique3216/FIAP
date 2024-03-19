@@ -1,4 +1,4 @@
-package Java.semana3.loja_de_carros;
+package Java.src.semana3.loja_de_carros;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package Java.Semana2;
+package Java.src.Semana2;
 
 public class EstruturaCondicionais {
     public static void main(String[] args) {

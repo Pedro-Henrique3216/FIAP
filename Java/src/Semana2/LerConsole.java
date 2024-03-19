@@ -1,4 +1,4 @@
-package Java.Semana2;
+package Java.src.Semana2;
 
 import java.util.Scanner;
 

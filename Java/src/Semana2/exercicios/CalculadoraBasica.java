@@ -1,6 +1,4 @@
-package Java.Semana2.exercicios;
-
-import com.sun.security.jgss.GSSUtil;
+package Java.src.Semana2.exercicios;
 
 import java.util.Scanner;
 

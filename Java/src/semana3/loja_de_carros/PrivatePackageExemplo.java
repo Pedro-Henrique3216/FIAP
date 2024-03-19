@@ -1,6 +1,4 @@
-package Java.semana3.loja_de_carros;
-
-import Java.semana3.loja_de_carros.Carro;
+package Java.src.semana3.loja_de_carros;
 
 public class PrivatePackageExemplo {
 

@@ -1,4 +1,4 @@
-package Java.semana3;
+package Java.src.semana3;
 
 public class Main {
 
