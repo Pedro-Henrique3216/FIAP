@@ -13,6 +13,8 @@ public class Questao14 {
         int termoSequencia = sc.nextInt() - 1;
 
         System.out.println(calculaSequenciaFibonacci(termoSequencia));
+
+        sc.close();
     }
 
     private static int calculaSequenciaFibonacci(int termoSequencia){
