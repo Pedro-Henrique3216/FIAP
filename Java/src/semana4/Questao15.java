@@ -19,5 +19,8 @@ public class Questao15 {
         cc.aumentoLimite(200);
 
         System.out.println(cc.getLimite());
+
+        cc.saque(1500);
+
     }
 }

@@ -39,7 +39,7 @@ public class ContaCorrente {
             saldo -= valor;
             limite -= valor;
         } else {
-            throw new IllegalArgumentException("Saque invalido o valor inserido deve ser menor ou igual ao saldo");
+            throw new IllegalArgumentException("Saque invalido o valor inserido deve ser menor ou igual ao saldo e menor ou igual ao limite");
         }
     }
 
