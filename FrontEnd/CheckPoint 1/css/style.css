@@ -29,6 +29,7 @@ img{
     width: 100%;
     text-align: center;
     background-color: black;
+    color: white;
 }
 
 p{
@@ -51,4 +52,8 @@ a{
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
     text-decoration: none;
+}
+
+.troca_pagina{
+    color: white;
 }
