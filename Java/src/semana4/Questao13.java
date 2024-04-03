@@ -1,4 +1,4 @@
-package Java.src.semana4;
+package semana4;
 
 public class Questao13 {
     public static void main(String[] args) {

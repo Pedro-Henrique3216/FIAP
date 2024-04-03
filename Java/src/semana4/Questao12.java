@@ -1,4 +1,4 @@
-package Java.src.semana4;
+package semana4;
 
 import java.util.HashMap;
 import java.util.Map;

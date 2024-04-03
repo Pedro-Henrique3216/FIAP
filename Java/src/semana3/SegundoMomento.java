@@ -1,8 +1,7 @@
-package Java.src.semana3;
+package semana3;
 
-
-import Java.src.semana3.loja_de_carros.Carro;
-import Java.src.semana3.loja_de_carros.Cor;
+import semana3.loja_de_carros.Carro;
+import semana3.loja_de_carros.Cor;
 
 public class SegundoMomento {
 

@@ -1,4 +1,4 @@
-package Java.src.semana3.loja_de_carros;
+package semana3.loja_de_carros;
 
 public class PrivatePackageExemplo {
 

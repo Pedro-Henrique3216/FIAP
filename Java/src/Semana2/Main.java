@@ -1,4 +1,4 @@
-package Java.src.Semana2;
+package Semana2;
 
 public class Main {
 
