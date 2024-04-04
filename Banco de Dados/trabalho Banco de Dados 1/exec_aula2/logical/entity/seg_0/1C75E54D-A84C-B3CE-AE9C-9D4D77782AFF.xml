@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C75E54D-A84C-B3CE-AE9C-9D4D77782AFF" name="PRODUTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-07 14:36:54 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_PRODUTO" id="D1B2E645-5DF9-EAAA-BE9A-26E7B82BE8CE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 14:54:12 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOME_PRODUTO" id="E9E9F71F-41B4-25DE-7394-94B06D014E45">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 14:54:44 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>110</dataTypeSize>
+<ownDataTypeParameters>110,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QUANTIDADE_CONSUMIDA" id="E59AA300-5787-69FD-A5E7-9329387AD919">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 14:55:13 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>200</dataTypePrecision>
+<ownDataTypeParameters>,200,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIPO" id="C3F0022B-34E8-4EE1-A2E4-82B351329E49">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 14:56:23 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>110</dataTypeSize>
+<ownDataTypeParameters>110,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRECO_UNITARIO" id="CF482326-2D85-75DD-266C-2CCB52ECCB8D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 14:56:46 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VALOR_TOTAL_VENDA" id="A2E542FD-377A-5BC9-4BFE-E898B232BCA8">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 14:58:19 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VALOR_TOTAL_DESCONTO" id="5B203944-F350-3026-D298-3BAF163F6C4B">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 14:58:46 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VALOR_TOTAL_GERAL_VENDA" id="D37DB94B-3F9C-A9BD-B087-EE4A377E47FB">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 14:59:18 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C033E771-6EDE-EBFE-C4CE-D71BBBECDE98" name="PRODUTO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 14:54:41 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D1B2E645-5DF9-EAAA-BE9A-26E7B82BE8CE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

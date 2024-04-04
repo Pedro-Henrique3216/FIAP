@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_DEPARTAMENTO_FUNCIONARIO" directorySegmentName="seg_0" id="AD3F48A3-EB4E-BC95-D74D-8824AB877945">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:41:48 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<sourcePk>99B7F1B7-FDCE-FD39-AF04-6942EA193770</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D28E902D-DE4B-32A1-ED5D-61F4B3DD6E7A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>67536FEE-7CDF-FAF5-C253-C0FDD82808AE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

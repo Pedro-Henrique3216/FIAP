@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D28E902D-DE4B-32A1-ED5D-61F4B3DD6E7A" name="T_DEPARTAMENTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:02:57 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_departamento" id="82C805F2-81A4-D3B6-3739-CB7D9E75B158">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:03:32 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="99B7F1B7-FDCE-FD39-AF04-6942EA193770" name="T_DEPARTAMENTO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:04:39 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>82C805F2-81A4-D3B6-3739-CB7D9E75B158</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

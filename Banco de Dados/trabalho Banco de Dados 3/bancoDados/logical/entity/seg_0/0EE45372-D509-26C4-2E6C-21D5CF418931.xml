@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0EE45372-D509-26C4-2E6C-21D5CF418931" name="T_CONSULTA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:28:43 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_consulta" id="29F7CEED-9B80-7DCB-C90C-336E62A9425B">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:46:11 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_paciente" id="BD36AC49-EEB4-9138-F73A-DCE9BF9F06AF">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:29:15 UTC</createdTime>
+<generatorID>7D1791A5-1BA9-CE2D-39A6-44CDCD03AF39</generatorID>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<referedAttribute>7FF4EC00-F20A-607B-7A8E-A0250C0A1E37</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_medico" id="EC747070-B769-540D-695A-C4689D290BBA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:29:36 UTC</createdTime>
+<generatorID>ADD5BA24-8AED-752B-CB4C-E5F36307FB26</generatorID>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<referedAttribute>546A9E42-DBFA-5645-07F1-8ABEC54022BB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6EE3D04E-B871-ADFF-67D6-B03C6E152085" name="T_CONSULTA PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:29:15 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD36AC49-EEB4-9138-F73A-DCE9BF9F06AF</attributeRef>
+<attributeRef>EC747070-B769-540D-695A-C4689D290BBA</attributeRef>
+<attributeRef>29F7CEED-9B80-7DCB-C90C-336E62A9425B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

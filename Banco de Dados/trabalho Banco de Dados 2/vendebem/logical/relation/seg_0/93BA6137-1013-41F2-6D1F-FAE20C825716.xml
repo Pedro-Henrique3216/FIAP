@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ESTABELECIMENTO_ENDERECO" directorySegmentName="seg_0" id="93BA6137-1013-41F2-6D1F-FAE20C825716">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:44:29 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<sourcePk>87E4DD7C-942D-39FF-6863-49091F0A61C3</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8E0AFA2B-0FA3-1EFA-CFE8-78CF1BB8472F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F37958C9-0385-6A99-AB39-2A71605F085E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

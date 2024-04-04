@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ESTABELECIMENTO_PEDIDO" directorySegmentName="seg_0" id="079B0B2C-33CC-C4F8-0E48-ED890F6B70AC">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:06:06 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<sourcePk>87E4DD7C-942D-39FF-6863-49091F0A61C3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8E0AFA2B-0FA3-1EFA-CFE8-78CF1BB8472F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1498D869-CF91-FD2B-9D5E-7C13A11FAEBD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

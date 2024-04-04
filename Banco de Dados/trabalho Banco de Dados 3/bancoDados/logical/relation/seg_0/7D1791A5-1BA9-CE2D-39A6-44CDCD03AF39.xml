@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_PACIENTE_CONSULTA" directorySegmentName="seg_0" id="7D1791A5-1BA9-CE2D-39A6-44CDCD03AF39">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:29:15 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<sourcePk>3E6C7C9C-53DC-202D-051D-BF2104A9067F</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DE9B880A-6907-A18F-5F27-A6351CBD7FF6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0EE45372-D509-26C4-2E6C-21D5CF418931</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

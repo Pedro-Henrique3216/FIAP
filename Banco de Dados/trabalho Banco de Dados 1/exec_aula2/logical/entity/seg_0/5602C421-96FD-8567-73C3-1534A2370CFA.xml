@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5602C421-96FD-8567-73C3-1534A2370CFA" name="PEDIDO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-07 14:36:24 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NUMERO_PEDIDO" id="954764AA-031B-2705-901B-7FFFA6B436B1">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 15:00:15 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATA_ENTRADA" id="4E263736-C6BA-3641-04AC-180CDB40B8DF">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 15:00:45 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOME_ATENDENTE" id="D03DACC3-71AE-25C9-92BB-B98D7BF9FC3A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 15:01:34 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>110</dataTypeSize>
+<ownDataTypeParameters>110,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FORMA_PAGAMENTO" id="F579D120-95B7-3A55-7B0E-3D0C0E7091AE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 15:01:56 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>110</dataTypeSize>
+<ownDataTypeParameters>110,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOME_CLIENTE" id="7E0167B1-4A22-35C3-33DA-BF4E981BBC2B">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 15:02:16 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>110</dataTypeSize>
+<ownDataTypeParameters>110,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QUANTIDADE_PESSOAS" id="CB309C3C-B33B-0AC4-0227-9704E46721E1">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 15:02:31 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATA_SAIDA" id="58C76FF2-8CC8-EB98-13FA-DA0B7B11FA5A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 15:03:10 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B91C679F-B195-EC1E-E947-485AB3BF7747" name="PEDIDO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 15:00:31 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>954764AA-031B-2705-901B-7FFFA6B436B1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

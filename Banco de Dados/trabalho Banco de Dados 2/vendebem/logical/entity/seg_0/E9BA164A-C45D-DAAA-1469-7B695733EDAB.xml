@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E9BA164A-C45D-DAAA-1469-7B695733EDAB" name="ITENS_PEDIDO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:17:34 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_itens_pedido" id="A0C1CBC8-F7A5-8C9A-D9A3-9DB518F279B8">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:24:14 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_pedido" id="77CE9D36-5EEE-F480-D97B-C94EDFB1A6AD">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:40:03 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do pedido. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<generatorID>38389B84-4C00-E5B6-7EC3-65EC77BA5EF0</generatorID>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<referedAttribute>B81CFF7C-8145-E357-E868-5954BF4C744B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_produto" id="784FE4D3-D816-8415-761B-9FDB5B5AD08C">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:40:52 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do produto. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<generatorID>67542123-469B-A622-A03A-7015858751FB</generatorID>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<referedAttribute>B0C34CA1-2CE1-296D-664D-88A9B0BB618D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qt_consumida" id="B90B4CD1-B058-1721-6633-AEBF2B60312F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:27:08 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_desconto" id="DC7AEA3D-2D39-F49E-A849-665222926528">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:32:02 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_total" id="F9738DDE-15A2-1082-02C3-6FE51550A3A7">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:32:38 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_venda" id="70247929-E4E0-EFA9-4175-F7EC56608E99">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:33:10 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7BB40CA5-46E2-EB80-73B5-D29DDC267879" name="ITENS_PEDIDO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:20:50 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A0C1CBC8-F7A5-8C9A-D9A3-9DB518F279B8</attributeRef>
+<attributeRef>77CE9D36-5EEE-F480-D97B-C94EDFB1A6AD</attributeRef>
+<attributeRef>784FE4D3-D816-8415-761B-9FDB5B5AD08C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

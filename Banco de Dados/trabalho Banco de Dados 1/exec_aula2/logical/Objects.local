@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="1C75E54D-A84C-B3CE-AE9C-9D4D77782AFF" name="PRODUTO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="B3D7D662-3B3F-F463-600E-F86C38FB3A46" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="5602C421-96FD-8567-73C3-1534A2370CFA" name="PEDIDO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="B3D7D662-3B3F-F463-600E-F86C38FB3A46" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="8A49E67A-EDBE-80D2-C453-FF316B86C2FC" name="ESTABELECIMENTO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="B3D7D662-3B3F-F463-600E-F86C38FB3A46" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

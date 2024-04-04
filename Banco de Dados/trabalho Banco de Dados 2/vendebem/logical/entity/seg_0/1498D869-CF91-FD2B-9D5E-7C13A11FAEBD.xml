@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1498D869-CF91-FD2B-9D5E-7C13A11FAEBD" name="T_VB_PEDIDO_VENDA">
+<createdBy>André</createdBy>
+<createdTime>2020-04-16 01:26:55 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_pedido" id="B81CFF7C-8145-E357-E868-5954BF4C744B">
+<createdBy>André</createdBy>
+<createdTime>2020-04-16 01:27:09 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do pedido. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do pedido. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<notes><![CDATA[Esse atributo irá receber a chave primária do pedido. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></notes>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_estabelecimento" id="C9F89538-CA1D-4C2C-8163-640D563CA7D5">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:06:06 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do estabelecimento. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<generatorID>079B0B2C-33CC-C4F8-0E48-ED890F6B70AC</generatorID>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<referedAttribute>396F4828-9347-DCCE-97BA-360A37611FDF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_emissao" id="1B563282-4183-001B-398A-9274B39E330C">
+<createdBy>André</createdBy>
+<createdTime>2020-04-16 01:27:48 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber data, hora e minuto do inicio do atendimento. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber data, hora e minuto do inicio do atendimento. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<notes><![CDATA[Esse atributo irá receber data, hora e minuto do inicio do atendimento. Seu conteúdo é obrigatório.]]></notes>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_atendente" id="408F9D9F-1975-A12A-97AB-A66DDCD8C227">
+<createdBy>willi</createdBy>
+<createdTime>2023-02-22 04:53:24 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o nome do atendente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o nome do atendente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<notes><![CDATA[Esse atributo irá receber o nome do atendente. Seu conteúdo é obrigatório.]]></notes>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_pagamento" id="C0B1BD3D-65FE-5A50-620C-5F22A711082B">
+<createdBy>willi</createdBy>
+<createdTime>2023-02-22 04:54:01 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a forma de pagamento aceitas pela regra de neogcio, só precisará ser preenchida no fechamento do pedido. Seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a forma de pagamento aceitas pela regra de neogcio, só precisará ser preenchida no fechamento do pedido. Seu conteúdo é opcional.]]></commentInRDBMS>
+<notes><![CDATA[Esse atributo irá receber a forma de pagamento aceitas pela regra de neogcio, só precisará ser preenchida no fechamento do pedido. Seu conteúdo é opcional.]]></notes>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_cliente" id="8863F5A1-1227-B236-6933-DDFDCA22C604">
+<createdBy>willi</createdBy>
+<createdTime>2023-02-22 04:56:32 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o nome do cliente para identificação no pedido. Seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o nome do cliente para identificação no pedido. Seu conteúdo é opcional.]]></commentInRDBMS>
+<notes><![CDATA[Esse atributo irá receber o nome do cliente para identificação no pedido. Seu conteúdo é opcional.
+]]></notes>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qt_pessoas" id="C51A627C-2B71-2377-CD1F-E6B0A2D449B4">
+<createdBy>willi</createdBy>
+<createdTime>2023-02-22 04:57:12 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a quantidade de pessoas para que possa ser realizada a sugestão de divisão de pagamento do pedido. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a quantidade de pessoas para que possa ser realizada a sugestão de divisão de pagamento do pedido. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<notes><![CDATA[Esse atributo irá receber a quantidade de pessoas para que possa ser realizada a sugestão de divisão de pagamento do pedido. Seu conteúdo é obrigatório.]]></notes>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_fechamento" id="80D1CF5B-0FDB-563D-477D-825A39614E1D">
+<createdBy>willi</createdBy>
+<createdTime>2023-02-22 04:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse atributo irá receber Data, hora e minuto do encerramento do pedido, preenchido somente quando o mesmo é encerrado. Seu conteúdo é opcional.]]></commentInRDBMS>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="69E11199-DCDC-53E1-DDD1-A1B91D49537F" name="PK_VB_PEDIDO">
+<createdBy>André</createdBy>
+<createdTime>2020-04-16 01:27:33 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>B81CFF7C-8145-E357-E868-5954BF4C744B</newElementsIDs>
+<usedAttributes>
+<attributeRef>B81CFF7C-8145-E357-E868-5954BF4C744B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="997A9D52-3D6A-6417-FD03-93FBF7ED0909" name="T_VB_MESA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:12:06 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_mesa" id="B3BF35BC-ED23-EFC9-B02B-BDC7C379CED2">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:12:43 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_estabelecimento" id="A60DAF52-D2B4-7905-AF71-43D53DB5864F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:14:41 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do estabelecimento. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<generatorID>C748D4CF-E708-5AE7-6D26-BD1408A0FB5E</generatorID>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<referedAttribute>396F4828-9347-DCCE-97BA-360A37611FDF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_mesa" id="C1E8BF66-3D44-22A5-FF2E-C64D8CB24695">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:13:14 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D1693E39-12AF-D5DE-D79C-DF3AC4D0A2E6" name="T_VB_MESA PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-21 14:14:08 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B3BF35BC-ED23-EFC9-B02B-BDC7C379CED2</attributeRef>
+<attributeRef>A60DAF52-D2B4-7905-AF71-43D53DB5864F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

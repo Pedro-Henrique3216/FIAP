@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8A49E67A-EDBE-80D2-C453-FF316B86C2FC" name="ESTABELECIMENTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-07 14:37:05 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_ESTABELECIMENTO" id="9B82C019-1C26-21A6-968F-139DC8C15087">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 14:36:33 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_RAZAO" id="014A0A24-4ADB-2972-8F6A-C05DAB3B1F7C">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 14:41:21 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>110</dataTypeSize>
+<ownDataTypeParameters>110,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CNPJ" id="E6653D7C-714E-D322-6B14-7A387378935F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 14:47:43 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INCRICAO_ESTADUAL" id="37919B6D-9102-5498-61EB-11C06E1D61DD">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 15:04:18 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ENDERECO" id="3D3E2B8D-38F2-19CA-432F-73F66031D357">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 15:04:41 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TELEFONE_EMPRESA" id="0DF4C20A-60ED-C755-A253-5584F2BB2FA9">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 15:05:05 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MESA" id="48A7A52E-E8BA-0332-30CA-115D05902AAE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 15:05:46 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="153A0BA3-62B0-3640-9953-F23DADC84E4C" name="ESTABELECIMENTO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-03-14 14:40:47 UTC</createdTime>
+<ownerDesignName>exec_aula2</ownerDesignName>
+<engineerTo>
+<item key="E6789113-8E49-1B68-0F32-D493E6B137AF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9B82C019-1C26-21A6-968F-139DC8C15087</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

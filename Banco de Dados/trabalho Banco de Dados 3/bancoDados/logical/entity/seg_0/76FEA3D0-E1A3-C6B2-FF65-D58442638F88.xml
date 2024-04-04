@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="76FEA3D0-E1A3-C6B2-FF65-D58442638F88" name="T_LIVRO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:27:39 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_livro" id="AFAD16A4-4440-9667-87DE-4A99A4914817">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:27:51 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_autor" id="73B048E2-745A-F1B0-66E3-DBC2E03D32D2">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:28:19 UTC</createdTime>
+<generatorID>05834D09-9AFF-B563-1F45-BD2B8244BA94</generatorID>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<referedAttribute>7D361592-2FF0-BE73-2111-536158136768</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E9549CDC-EBF3-346A-9C9A-F159311F319E" name="T_LIVRO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:28:03 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AFAD16A4-4440-9667-87DE-4A99A4914817</attributeRef>
+<attributeRef>73B048E2-745A-F1B0-66E3-DBC2E03D32D2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

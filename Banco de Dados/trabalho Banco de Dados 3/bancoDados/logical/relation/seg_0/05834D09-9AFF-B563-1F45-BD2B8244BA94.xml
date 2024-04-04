@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_AUTOR_LIVRO" directorySegmentName="seg_0" id="05834D09-9AFF-B563-1F45-BD2B8244BA94">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:28:19 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<sourcePk>B27FD764-AE6D-CED6-68A7-5767FE7B0929</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D9A5A596-3F3C-241A-74D5-CCF9521DE09E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>76FEA3D0-E1A3-C6B2-FF65-D58442638F88</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

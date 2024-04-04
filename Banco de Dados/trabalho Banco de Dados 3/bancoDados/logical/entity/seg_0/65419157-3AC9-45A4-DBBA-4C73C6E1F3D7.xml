@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="65419157-3AC9-45A4-DBBA-4C73C6E1F3D7" name="T_LOGIN_RHSTU">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:31:09 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_login_rhstu" id="DC344463-C412-E75A-BDCE-E20A6ACB0901">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:31:20 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_funcionario" id="69A24321-3E48-E045-D87A-5BE81463E9B6">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:37:47 UTC</createdTime>
+<generatorID>E4CEDA68-F8EC-940B-ED34-CD6F51D247A2</generatorID>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<referedAttribute>E971C71C-4A3D-AD97-29C6-235462EAFE81</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6B3D8080-83D9-7D1E-A92D-F2609AB2E4F9" name="T_LOGIN_RHSTU PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:31:34 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DC344463-C412-E75A-BDCE-E20A6ACB0901</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

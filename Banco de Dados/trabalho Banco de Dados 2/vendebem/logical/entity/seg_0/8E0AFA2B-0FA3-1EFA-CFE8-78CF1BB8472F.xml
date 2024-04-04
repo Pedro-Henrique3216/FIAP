@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8E0AFA2B-0FA3-1EFA-CFE8-78CF1BB8472F" name="T_VB_ESTABELECIMENTO">
+<createdBy>André</createdBy>
+<createdTime>2020-04-16 01:00:17 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_estabelecimento" id="396F4828-9347-DCCE-97BA-360A37611FDF">
+<createdBy>André</createdBy>
+<createdTime>2020-04-16 01:03:22 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do estabelecimento. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do estabelecimento. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<notes><![CDATA[Esse atributo irá receber a chave primária do estabelecimento. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></notes>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_razao_social" id="873AC686-1A4B-0A70-1171-D99D2E9540B7">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-31 16:05:29 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá recebera razão social do estabelecimento.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá recebera razão social do estabelecimento.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<notes><![CDATA[Esse atributo irá recebera razão social do estabelecimento.Seu conteúdo é obrigatório.]]></notes>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>110</dataTypeSize>
+<ownDataTypeParameters>110,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_cnpj" id="C462D44F-AB08-A300-DE93-A452D9782209">
+<createdBy>willi</createdBy>
+<createdTime>2023-02-22 01:50:44 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o Numero do Cadastro Nacional da Pessoa Juridica do estabelecimento. Seu conteúdo é obrigatório e será validado de acordo com regras de negócio.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o Numero do Cadastro Nacional da Pessoa Juridica do estabelecimento. Seu conteúdo é obrigatório e será validado de acordo com regras de negócio.]]></commentInRDBMS>
+<notes><![CDATA[Esse atributo irá receber o Numero do Cadastro Nacional da Pessoa Juridica do estabelecimento. Seu conteúdo é obrigatório e será validado de acordo com regras de negócio.]]></notes>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_insc_estadual" id="C1334F9F-19CF-5682-3CE7-FBD1C515B243">
+<createdBy>willi</createdBy>
+<createdTime>2023-02-22 01:51:42 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o número da inscrição estadual,  somente os estabelecimentos contribuintes do ICMS possuem essa inscrição.Seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o número da inscrição estadual,  somente os estabelecimentos contribuintes do ICMS possuem essa inscrição.Seu conteúdo é opcional.]]></commentInRDBMS>
+<notes><![CDATA[Esse atributo irá receber o número da inscrição estadual,  somente os estabelecimentos contribuintes do ICMS possuem essa inscrição.Seu conteúdo é opcional.]]></notes>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_telefone" id="B5435F13-EFFE-D26F-36BC-988DE2678D13">
+<createdBy>willi</createdBy>
+<createdTime>2023-02-22 01:57:10 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o número do  telefone estabelecimento.  Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o número do  telefone estabelecimento.  Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<notes><![CDATA[Esse atributo irá receber o número do  telefone estabelecimento.  Seu conteúdo é obrigatório.]]></notes>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>70</dataTypePrecision>
+<ownDataTypeParameters>,70,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="87E4DD7C-942D-39FF-6863-49091F0A61C3" name="PK_VB_EMPRESA">
+<createdBy>André</createdBy>
+<createdTime>2020-04-16 01:04:38 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="3B900023-A8F4-1D43-7275-0ABB8837388D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>396F4828-9347-DCCE-97BA-360A37611FDF</newElementsIDs>
+<usedAttributes>
+<attributeRef>396F4828-9347-DCCE-97BA-360A37611FDF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

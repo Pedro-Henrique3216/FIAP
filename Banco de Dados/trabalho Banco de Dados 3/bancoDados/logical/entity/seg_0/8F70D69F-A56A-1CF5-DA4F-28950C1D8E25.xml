@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8F70D69F-A56A-1CF5-DA4F-28950C1D8E25" name="T_PEDIDO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:21:00 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pedido" id="FE190644-63FE-4B00-6099-14FE5BD7D46D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:21:25 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cliente" id="D7FBD436-07CD-659E-BF49-8F7648352D43">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:35:42 UTC</createdTime>
+<generatorID>AEF5A80A-7A8C-ED99-72B9-05162E2AD0AB</generatorID>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<referedAttribute>35A81330-E352-B3FB-79B9-9D03E5152B31</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FF5B9D2B-6D71-B0F9-7F69-64AD464291E6" name="T_PEDIDO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:21:37 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FE190644-63FE-4B00-6099-14FE5BD7D46D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

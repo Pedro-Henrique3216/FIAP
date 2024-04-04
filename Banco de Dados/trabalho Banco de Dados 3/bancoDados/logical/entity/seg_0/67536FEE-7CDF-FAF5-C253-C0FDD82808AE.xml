@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="67536FEE-7CDF-FAF5-C253-C0FDD82808AE" name="T_FUNCIONARIO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:07:51 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_funcionario" id="E971C71C-4A3D-AD97-29C6-235462EAFE81">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:08:36 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_login_rhstu" id="5BECEEE5-1E23-3BEB-5452-5285D49A4DEC">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:38:13 UTC</createdTime>
+<generatorID>E4CEDA68-F8EC-940B-ED34-CD6F51D247A2</generatorID>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<referedAttribute>DC344463-C412-E75A-BDCE-E20A6ACB0901</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_departamento" id="C9E73CD4-121E-81BB-6B91-6051EF97BBD5">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:41:48 UTC</createdTime>
+<generatorID>AD3F48A3-EB4E-BC95-D74D-8824AB877945</generatorID>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<referedAttribute>82C805F2-81A4-D3B6-3739-CB7D9E75B158</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6C0620E0-C20C-CA3A-A27E-9B001E3A56C2" name="T_FUNCIONARIO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-04 14:08:57 UTC</createdTime>
+<ownerDesignName>bancoDados</ownerDesignName>
+<engineerTo>
+<item key="AA5B1E08-C08C-460E-DFF8-289AD5EDEE45" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E971C71C-4A3D-AD97-29C6-235462EAFE81</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
