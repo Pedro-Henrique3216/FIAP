@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+
+    <table>
+        <colgroup>
+            <col>
+            <col class="pessoal" span="1">
+            <col>
+        </colgroup>
+        <caption>Lista de Telefones de Funcionários ativos</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Celular</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pedro Henrique</td>
+                <td>(11)91234-5678</td>
+                <td>exemplo@gmail.com</td>
+            </tr>
+            <tr>
+                <td rowspan="1">João Gomes</td>
+                <td>(11)98765-4321</td>
+                <td>Joao@gmail.com</td>
+            </tr>
+            <tr>
+                <td>João Gomes</td>
+                <td>(11)95212-1241</td>
+                <td>joao@fiap.com</td>
+            </tr>
+            <tr>
+                <td>Nicolas</td>
+                <td>(11)96452-4523</td>
+                <td>nicolas@gmail.com</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Telefones de Funcionários ativos</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
