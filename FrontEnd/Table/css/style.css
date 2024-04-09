@@ -1,0 +1,31 @@
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 60%;
+}
+
+th, td{
+    padding: 5px;
+}
+
+.pessoal{
+    background-color: aqua;
+}
+
+thead{
+    background-color: royalblue;
+    color: white;
+}
+
+tbody tr:nth-child(2n){
+    background-color: #aaa;
+}
+
+tfoot{
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
