@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F9375A00-773B-2F35-F877-36CD5E2EF141" name="T_RHSTU_PAGAMENTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-25 13:58:05 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_PAGAMENTO" id="6AB97671-556A-843F-EF81-F79792CCDBF2">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-25 13:58:21 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_CONSULTA" id="AD43D9A1-17AE-8CD8-2D6E-83B86C9C068B">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-25 14:19:50 UTC</createdTime>
+<generatorID>8985190E-9BBC-CD28-6C2F-006E78E2AD6D</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>095D59B4-BFE9-2187-867F-4C7FBC3BCF24</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PACIENTE" id="72B501FD-D24B-0437-94F7-122C06333596">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-25 14:18:15 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do paciente. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<generatorID>14D9921B-DBE6-1FBF-B06A-5D5B1DEE74B2</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>18B11CFF-5EFC-EDDF-9930-33000698A15B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PLANO_SAUDE" id="15581C73-DCED-3D41-883E-3F7D013A0762">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-25 14:18:15 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do plano de saúde. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<generatorID>14D9921B-DBE6-1FBF-B06A-5D5B1DEE74B2</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>25547378-D14F-63D1-8360-DEEEF10939F9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_FORMA_PAGAMENTO" id="901B9199-D5B4-2F96-44EA-02B84337B91B">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-25 14:18:55 UTC</createdTime>
+<generatorID>7136A960-B8D7-DDDD-4C4F-B8E596A495CB</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>317CEA85-68EF-7D75-8CB2-ED3E5DB97B80</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_INICIO" id="26A1D957-75A9-2D89-C8C9-0081E603662B">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-25 14:18:15 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a data de início para atendimento do plano de saúde do cliente aceito na RHSTU. Seu conteúdo é opcional.]]></comment>
+<generatorID>14D9921B-DBE6-1FBF-B06A-5D5B1DEE74B2</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>D804C1B6-E42C-AA60-291E-C9A4A25130BB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_PAGAMENTO" id="C973BE85-29A0-3F0E-C759-1572F1B4109A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-25 14:03:11 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_UNIDADE_HOSPITALAR" id="5ECA433B-09AE-1C2D-0C24-D9990EDC5736">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-25 14:48:24 UTC</createdTime>
+<generatorID>8985190E-9BBC-CD28-6C2F-006E78E2AD6D</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>141B2652-CB21-3CEF-9344-543671B90698</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="68AFDA9D-6EDB-CBB1-939F-558D0D94239D" name="T_RHST_PAGAMENTO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-25 14:03:30 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6AB97671-556A-843F-EF81-F79792CCDBF2</attributeRef>
+<attributeRef>AD43D9A1-17AE-8CD8-2D6E-83B86C9C068B</attributeRef>
+<attributeRef>5ECA433B-09AE-1C2D-0C24-D9990EDC5736</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

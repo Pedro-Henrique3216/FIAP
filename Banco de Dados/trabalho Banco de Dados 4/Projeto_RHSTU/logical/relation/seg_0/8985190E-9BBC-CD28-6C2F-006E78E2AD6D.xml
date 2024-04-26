@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_CONSULTA_PAGAMENTO" directorySegmentName="seg_0" id="8985190E-9BBC-CD28-6C2F-006E78E2AD6D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-04-25 14:19:50 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<sourcePk>ED3F73EB-01E1-0D40-598D-EDD036A7E8A6</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>78068240-FD0E-2CCA-6AE7-3D725CE0559A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F9375A00-773B-2F35-F877-36CD5E2EF141</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
