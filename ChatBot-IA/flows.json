@@ -1,0 +1,51 @@
+[
+    {
+        "id": "429e160b180fc8fd",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9f555fb064d2d275",
+        "type": "inject",
+        "z": "429e160b180fc8fd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello World!",
+        "payloadType": "str",
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "e7d76481568b63e6"
+            ]
+        ]
+    },
+    {
+        "id": "e7d76481568b63e6",
+        "type": "debug",
+        "z": "429e160b180fc8fd",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 320,
+        "wires": []
+    }
+]

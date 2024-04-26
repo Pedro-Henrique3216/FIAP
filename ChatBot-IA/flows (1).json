@@ -1,0 +1,75 @@
+[
+    {
+        "id": "429e160b180fc8fd",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9f555fb064d2d275",
+        "type": "inject",
+        "z": "429e160b180fc8fd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Qual prazo de entrega?",
+        "payloadType": "str",
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "050c26d5740384dd"
+            ]
+        ]
+    },
+    {
+        "id": "e7d76481568b63e6",
+        "type": "debug",
+        "z": "429e160b180fc8fd",
+        "name": "msg.payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "050c26d5740384dd",
+        "type": "watson-assistant-v2",
+        "z": "429e160b180fc8fd",
+        "name": "",
+        "service-endpoint": "",
+        "assistant_id": "",
+        "debug": false,
+        "restart": false,
+        "return_context": true,
+        "alternate_intents": false,
+        "multisession": true,
+        "timeout": "",
+        "optout-learning": false,
+        "persist-session-id": false,
+        "x": 630,
+        "y": 220,
+        "wires": [
+            [
+                "e7d76481568b63e6"
+            ]
+        ]
+    }
+]
