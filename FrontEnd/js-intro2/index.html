@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções e DOM</title>
+</head>
+<body>
+    <h1 id="titulo">Introdução Javascript</h1>
+
+    <label for="idNome">Nome</label>
+    <input type="text" id="idNome">
+    <button onclick="mudar()">Exibir</button>
+
+    <h2 class="exemplo">Exemlo ClassName</h2>
+
+    <button class="exemplo">Exemplo 1</button>
+    <button class="exemplo">Exemplo 2</button>
+    <button class="exemplo">Exemplo 3</button>
+
+    <p>Primeiro: <span class="corredor"></span></p>
+    <p>Segundo: <span class="corredor"></span></p>
+    <p>Terceiro: <span class="corredor"></span></p>
+
+    <label for="idnovo">Novo Classificado</label>
+    <input type="text" id="idnovo"><br>
+    <label for="posicao">Posição</label>
+    <input type="number" id="posicao" min="1" max="3">
+    <button onclick="inserir()">Inserir</button>
+
+    <h2>Exemplo TagName</h2>
+
+    <ul>
+        <li>Janeiro</li>
+        <li>Fevereiro</li>
+        <li>Março</li>
+        <li>Abril</li>
+        <li>Maio</li>
+    </ul>
+
+    <label for="numero">Escolha um mes</label>
+    <input type="number" id="numero" min="1" max="5">
+    <button onclick="mostrar()">Mostra</button>
+    <p>Mes escolhido: <span id="resultado"></span></p>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
