@@ -11,6 +11,16 @@ necessariamente, o maior aumento em reais. Por exemplo, um produto passou de
 foi de 0,50. Ja um outro produto passou de 20,00 para 22,00 um aumento percentual
 de 10% mas aumentou R$ 2,00. """
 
+def verifica_aumento(quantidade_produtos):
+    for i in range(quantidade_produtos):
+        preco_atual = float(input("Digite o preço atual do produto: "))
+        preco_reajustado = float(input("Digite o preço reajustado do produto: "))
+
+        aumento = preco_reajustado - preco_atual
+
+        aumento_percentual = preco_reajustado * 100 / preco_atual - 100
+
+        print("O produto passou de {:.2f} para {:.2f}, então seu aumento foi de R$ {:.2f} e seu aumento percentual foi de {:.2f}%".format(preco_atual, preco_reajustado, aumento, aumento_percentual))
 
 quantidade_produtos = int(input("Digite a quantidade de produtos que irá digitar: "))
 while(quantidade_produtos <= 0):
@@ -18,12 +28,4 @@ while(quantidade_produtos <= 0):
     quantidade_produtos = int(input("Digite uma quantidade de produtos valida: "))
 
 
-for i in range(quantidade_produtos):
-    preco_atual = float(input("Digite o preço atual do produto: "))
-    preco_reajustado = float(input("Digite o preço reajustado do produto: "))
-
-    aumento = preco_reajustado - preco_atual
-
-    aumento_percentual = preco_reajustado * 100 / preco_atual - 100
-
-    print("O produto passou de {:.2f} para {:.2f}, então seu aumento foi de R$ {:.2f} e seu aumento percentual foi de {:.2f}%".format(preco_atual, preco_reajustado, aumento, aumento_percentual))
+verifica_aumento(quantidade_produtos)
