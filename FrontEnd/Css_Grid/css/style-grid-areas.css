@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-auto-rows: 150px;
+    grid-template-areas: 
+        'header header header header'
+        'sec1   sec1   sec2   sec2'  
+        'sec1   sec1   sec3   sec3'
+        'art1   art2   sec4   sec4'
+        'footer footer footer footer'
+    ;
+
+    gap: 5px;
+}
+
+header{
+    grid-area: header;
+}
+.sec1{
+    grid-area: sec1;
+}
+.sec2{
+    grid-area: sec2;
+}
+.sec3{
+    grid-area: sec3;
+}
+.sec4{
+    grid-area: sec4;
+}
+.art1{
+    grid-area: art1;
+}
+.art2{
+    grid-area: art2;
+}
+footer{
+    grid-area: footer;
+}
+
+
+
+header, section, article, footer{
+    background-color: lightgreen;
+    border: 4px solid darkgreen;
+    color: darkgreen;
+    font-size: 2em;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .container{
+        grid-template-areas: 
+            'header header header header'
+            'sec1   sec1   sec2   sec2'  
+            'sec1   sec1   sec3   sec3'
+            'art1   art1   sec4   sec4'
+            'art2   art2   sec4   sec4'
+            'footer footer footer footer'
+        ;
+    }
+
+    header, section, article, footer{
+        background-color: lightpink;
+        border: 4px solid darkorchid;
+        color: darkorchid;
+    }
+}
+
+@media screen and (max-width: 876px) {
+
+    .container{
+        grid-template-areas: 
+            'header header header header'
+            'sec1   sec1   sec1   sec1'  
+            'sec1   sec1   sec1   sec1'
+            'sec2   sec2   sec3   sec3'
+            'art1   art1   sec4   sec4'
+            'art2   art2   sec4   sec4'
+            'footer footer footer footer'
+        ;
+    }
+
+    header, section, article, footer{
+        background-color: lightblue;
+        border: 4px solid darkblue;
+        color: darkblue;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .container{
+        grid-template-areas: 
+            'header header'
+            'sec1   sec1'  
+            'sec2   sec2'
+            'sec3   sec3'
+            'sec4   sec4'
+            'art1   art1'
+            'art2   art2'
+            'footer footer'
+        ;
+    }
+
+    header, section, article, footer{
+        background-color: lightgoldenrodyellow;
+        border: 4px solid darkorange;
+        color: darkorange;
+    }
+}
