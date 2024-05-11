@@ -9,6 +9,10 @@ public class Quadrilatero extends MinimoPoligono{
         this.l4 = l4;
     }
 
+    public double getL4() {
+        return l4;
+    }
+
     @Override
     public double getArea() {
         return 0;

@@ -11,6 +11,18 @@ public class Hexagono extends MinimoPoligono{
         this.l6 = l6;
     }
 
+    public double getL4() {
+        return l4;
+    }
+
+    public double getL5() {
+        return l5;
+    }
+
+    public double getL6() {
+        return l6;
+    }
+
     @Override
     public double getArea() {
         return 0;

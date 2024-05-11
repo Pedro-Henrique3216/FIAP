@@ -10,6 +10,14 @@ public class Pentagono extends MinimoPoligono{
         this.l5 = l5;
     }
 
+    public double getL4() {
+        return l4;
+    }
+
+    public double getL5() {
+        return l5;
+    }
+
     @Override
     public double getArea() {
         return 0;
