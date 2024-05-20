@@ -51,6 +51,12 @@ def embaralha(monte: list):
 
     # random.shuffle
         
+def to_str_list(mao: list):
+    saida = ""
+    for carta in mao:
+        saida = "{} {}".format(saida, to_str(carta))
+    return saida
+
 if(__name__ == "__main__"):
     deck = cria("maco")
     # for card in deck:

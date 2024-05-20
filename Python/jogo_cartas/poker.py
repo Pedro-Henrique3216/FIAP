@@ -9,8 +9,8 @@ mao_jgd2 = baralho.distribui(deck, 2)
 
 mesa = baralho.distribui(deck, 2)
 
-print(mao_jgd1)
+print("Jogador 1 {}".format(baralho.to_str_list(mao_jgd1)))
 
-print(mesa)
+print("mesa {}".format(baralho.to_str_list(mesa)))
 
-print(mao_jgd2)
+print("Jogador 2 {}".format(baralho.to_str_list(mao_jgd2)))
