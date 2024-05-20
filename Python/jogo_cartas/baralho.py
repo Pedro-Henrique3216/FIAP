@@ -5,7 +5,7 @@ def cria(tipo):
     if(tipo == "maco"):
         for i in range(1, 14):
             for n in naipe:
-                    monte.append((i, n))
+                monte.append((i, n))
     #TODO crie os outros tipos de baralho (truco e 2maco)
     if(tipo == "2maco"):
         for i in range(2):
@@ -13,20 +13,23 @@ def cria(tipo):
                 for n in naipe:
                     monte.append((i, n))
     if(tipo == "truco"):
-        for i in range(4, 14):
+        for i in range(1, 14):
             for n in naipe:
                 monte.append((i, n))
-    
+
+        for i in range(8, 10):
+            for n in naipe:
+                monte.remove((i, n))
     return monte
 
 def to_str(carta):
-    if carta[0] == 13:
+    if carta[0] == 1:
         return f"A{carta[1]}"
-    if carta[0] == 10:
-        return f"J{carta[1]}"
     if carta[0] == 11:
-        return f"Q{carta[1]}"
+        return f"J{carta[1]}"
     if carta[0] == 12:
+        return f"Q{carta[1]}"
+    if carta[0] == 13:
         return f"K{carta[1]}"
     else:
         return f"{carta[0]}{carta[1]}"
@@ -54,7 +57,10 @@ def embaralha(monte: list):
 def to_str_list(mao: list):
     saida = ""
     for carta in mao:
-        saida = "{} {}".format(saida, to_str(carta))
+        if(carta != None): 
+            saida = "{} {}".format(saida, to_str(carta))
+        else:
+            saida = f"{saida} "
     return saida
 
 if(__name__ == "__main__"):
