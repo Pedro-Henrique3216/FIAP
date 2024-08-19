@@ -15,4 +15,4 @@ if __name__ == "__main__":
     print(ordena_lista(lista))    
 
     lista2 = ["Pedro", "Arthur", "Jonas", "Thiago", "Caio"]
-    print(ordena_lista(lista))
+    print(ordena_lista(lista2))
