@@ -7,8 +7,8 @@ import java.util.*;
 public class Teste {
     public static void main(String[] args) {
 
-        var pessoa = new Pessoa("Jose", 13);
-        var pessoa2 = new Pessoa("Jose", 13);
+        var pessoa = new Pessoa("Jose", 13, "15265464");
+        var pessoa2 = new Pessoa("Jose", 13, "1564897");
 
         Set<Pessoa> pessoas = new HashSet<>();
         pessoas.add(pessoa);

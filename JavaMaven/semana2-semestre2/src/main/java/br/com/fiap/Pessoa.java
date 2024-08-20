@@ -2,15 +2,20 @@ package br.com.fiap;
 
 import java.util.Objects;
 
-public class Pessoa {
+public class Pessoa implements Comparable<Pessoa> {
+    @Override
+    public int compareTo(Pessoa o) {
+        return Integer.compare(o.idade, this.idade);
+    }
 
     private String nome;
     private int idade;
     private String cpf;
 
-    public Pessoa(String nome, int idade) {
+    public Pessoa(String nome, int idade, String cpf) {
         this.nome = nome;
         this.idade = idade;
+        this.cpf = cpf;
     }
 
     public String getNome() {
