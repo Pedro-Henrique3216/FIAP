@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+h1 {
+  color: green;
+  text-decoration: underline;
+}
+
+.div1 {
+  border: 8px solid green;
+  padding: 1em;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
