@@ -10,5 +10,8 @@ public class Ex2 {
         System.out.println(arrayPeek);
         System.out.println(arrayPeek.popFirst());
         System.out.println(arrayPeek);
+
+        System.out.println(arrayPeek.popLast());
+        System.out.println(arrayPeek);
     }
 }

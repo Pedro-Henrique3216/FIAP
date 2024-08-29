@@ -52,12 +52,19 @@ public class ArrayPeek {
 
         int primerioELemento = arr[0];
         ArrayPeek newArr = new ArrayPeek();
-        for(int numero : arr){
-            if(numero != primerioELemento){
-                newArr.add(numero);
-            }
+        for(int i = 1; i < arr.length; i++){
+            newArr.add(arr[i]);
         }
         arr = newArr.toArray();
+        return primerioELemento;
+    }
+
+    public int popLast(){
+        if (arr.length == 0){
+            throw new IndexOutOfBoundsException("Tamanho da lista deve ser maior que 0");
+        }
+        int primerioELemento = arr[0];
+        arr = Arrays.copyOfRange(arr, 1, arr.length);
         return primerioELemento;
     }
 
