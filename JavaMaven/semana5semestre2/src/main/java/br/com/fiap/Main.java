@@ -1,7 +1,9 @@
 package br.com.fiap;
 
+import br.com.fiap.dao.PessoaDao;
+import br.com.fiap.dao.PessoaDaoImp;
+
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Main {
@@ -16,8 +18,16 @@ public class Main {
         DatabaseConfig db = new DatabaseConfig(URL, USER, PASS);
         Connection con = db.getConnection();
 
-        String sql = "INSERT INTO PESSOA_1TDSPJ(id, name, idade) VALUES (22, 'carlos', 20)";
-        PreparedStatement stmt = con.prepareStatement(sql);
-        stmt.executeUpdate();
+        PessoaDao pessoaDao = new PessoaDaoImp(con);
+        pessoaDao.read().forEach(System.out::println);
+
+        System.out.println();
+
+        pessoa.setNome("Matheus");
+        pessoa.setIdade(30);
+        pessoa.setId(5);
+        pessoaDao.update(pessoa);
+
+        pessoaDao.delete(99L);
     }
 }
