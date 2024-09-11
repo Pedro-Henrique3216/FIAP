@@ -1,4 +1,4 @@
-package br.com.fiap;
+package br.com.fiap.entities;
 
 public class Pessoa {
 
@@ -12,7 +12,7 @@ public class Pessoa {
     public Pessoa(long id, String nome, int idade) {
         this.id = id;
         this.nome = nome;
-        this.idade = idade;
+        setIdade(idade);
     }
 
     public long getId() {
@@ -36,7 +36,15 @@ public class Pessoa {
     }
 
     public void setIdade(int idade) {
-        this.idade = idade;
+        if(isMaiorDeIdade(idade)){
+            this.idade = idade;
+        } else {
+            throw new RuntimeException("A pessoa tem que ser maior que a idade");
+        }
+    }
+
+    private boolean isMaiorDeIdade(int idade) {
+        return idade >= 18;
     }
 
     @Override

@@ -2,6 +2,7 @@ package br.com.fiap;
 
 import br.com.fiap.dao.PessoaDao;
 import br.com.fiap.dao.PessoaDaoImp;
+import br.com.fiap.entities.Pessoa;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -16,9 +17,8 @@ public class Main {
         Pessoa pessoa = new Pessoa(1L, "João", 25);
 
         DatabaseConfig db = new DatabaseConfig(URL, USER, PASS);
-        Connection con = db.getConnection();
 
-        PessoaDao pessoaDao = new PessoaDaoImp(con);
+        PessoaDao pessoaDao = new PessoaDaoImp(db);
         pessoaDao.read().forEach(System.out::println);
 
         System.out.println();

@@ -17,6 +17,11 @@ public class DatabaseConfig {
     }
 
     public Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(url, user, password);
+        try {
+            return DriverManager.getConnection(url, user, password);
+        } catch (SQLException e) {
+            throw new RuntimeException(e.getMessage());
+        }
+
     }
 }
