@@ -5,7 +5,7 @@ def retorna_conexao ():
     dsn = "oracle.fiap.com.br/orcl"
     user = os.environ["DB_USER_ORACLE"]
     password = os.environ["DB_PASSWORD_ORACLE"]
-    return oracledb.connect(user="rm559064", password="221005", dsn=dsn)
+    return oracledb.connect(user=user, password=password, dsn=dsn)
 
 if __name__ == "__main__":
     conn = retorna_conexao()
