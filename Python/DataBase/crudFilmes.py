@@ -48,3 +48,9 @@ def excluir(id):
             cur.execute(sql, insere)
             conn.commit()
             
+def insereAll(lista: list):
+    with cdb.retorna_conexao() as conn:
+        for filme in lista:
+            insert(filme[0], filme[1], filme[2])
+
+            
