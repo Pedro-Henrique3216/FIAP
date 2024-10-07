@@ -45,6 +45,22 @@ def altera_carro_by_id(id):
     carro["placa"] = data["placa"] if "placa" in data else car["placa"]
     return jsonify(carro), 200
 
+@app.route("/carros/update/<int:id>", methods=["PUT"])
+def altera_carro_by_id2(id):
+    data = request.json
+    for ind, car in enumerate(carros):
+        if id == car["id"]:
+            new_car = {}
+            new_car.update({"id": id})
+            new_car.update(data)
+            carros[ind] = new_car
+            return jsonify(carros[ind]), 200
+            
+    
+    info = {"title": "Nao encontrado", "status" : 404}
+    return jsonify(info) , 404
+    
+
 
 
 if __name__ == "__main__":
