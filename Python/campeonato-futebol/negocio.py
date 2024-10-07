@@ -59,8 +59,8 @@ def consulta_tabela_classificao() -> list:
     return tabela
     
 
+if __name__ == "__main__":
+    # cadastra_partida(partida=jogo)
 
-# cadastra_partida(partida=jogo)
-
-print(consulta_tabela_classificao())
+    print(consulta_tabela_classificao())
 
