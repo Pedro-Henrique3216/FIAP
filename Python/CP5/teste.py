@@ -143,3 +143,5 @@ for mensagem in banco.recupera_destinatario("joao@example.com"):
     print(mensagem)
 
 banco.apaga(1)
+
+print(banco.recupera(1))
