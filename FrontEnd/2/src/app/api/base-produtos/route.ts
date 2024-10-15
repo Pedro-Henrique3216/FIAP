@@ -1,10 +1,10 @@
 import { TipoProduto } from "@/types";
-import { promises as fs} from "fs";
+import { promises as fs } from "fs";
 import { NextResponse } from "next/server";
 
-export async function GET(){
+export async function GET() {
 
-    const file = await fs.readFile(process.cwd() + '/src/data/base.json','utf-8');
+    const file = await fs.readFile(process.cwd() + '/src/data/base.json', 'utf-8');
     const produtos = JSON.parse(file);
 
     return NextResponse.json(produtos);
@@ -23,3 +23,4 @@ export async function POST(request: Request) {
     await fs.writeFile(process.cwd() + '/src/data/base.json', json)
     return NextResponse.json(produto)
 }
+
