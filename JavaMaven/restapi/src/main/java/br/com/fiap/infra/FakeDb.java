@@ -1,4 +1,6 @@
-package br.com.fiap;
+package br.com.fiap.infra;
+
+import br.com.fiap.models.Pessoa;
 
 import java.util.HashMap;
 import java.util.Map;
