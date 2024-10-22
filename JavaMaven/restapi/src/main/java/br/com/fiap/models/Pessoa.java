@@ -3,17 +3,16 @@ package br.com.fiap.models;
 public class Pessoa {
 
     private Long id;
+
     private String nome;
-    private String endereco;
 
-
-    public Pessoa() {
-    }
-
-    public Pessoa(Long id, String nome, String endereco) {
+    public Pessoa(Long id, String nome) {
         this.id = id;
         this.nome = nome;
-        this.endereco = endereco;
+    }
+
+    public Pessoa(String nome) {
+        this.nome = nome;
     }
 
     public Long getId() {
@@ -32,20 +31,4 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
-
-    @Override
-    public String toString() {
-        return "Pessoa{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", endereco='" + endereco + '\'' +
-                '}';
-    }
 }

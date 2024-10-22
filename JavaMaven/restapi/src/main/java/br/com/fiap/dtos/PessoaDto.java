@@ -3,8 +3,8 @@ package br.com.fiap.dtos;
 public class PessoaDto {
 
     private Long id;
+
     private String nome;
-    private String endereco;
 
     public Long getId() {
         return id;
@@ -20,13 +20,5 @@ public class PessoaDto {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
     }
 }
