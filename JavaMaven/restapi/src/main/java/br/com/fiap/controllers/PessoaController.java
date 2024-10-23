@@ -3,6 +3,7 @@ package br.com.fiap.controllers;
 import br.com.fiap.dtos.PessoaDto;
 import br.com.fiap.exceptions.PessoaInvalida;
 import br.com.fiap.exceptions.PessoaNotFound;
+import br.com.fiap.exceptions.PessoaNotUpdate;
 import br.com.fiap.models.Pessoa;
 import br.com.fiap.service.PessoaService;
 import br.com.fiap.service.PessoaServiceFactory;
@@ -55,6 +56,10 @@ public class PessoaController {
         } catch (PessoaNotFound e) {
             return Response.status(Response.Status.NOT_FOUND)
                     .entity(Map.of("mensagem","id não existe")).build();
+        } catch (PessoaNotUpdate e){
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
+                    .entity(Map.of("mensagem","dados invalidos"))
+                    .build();
         }
     }
 

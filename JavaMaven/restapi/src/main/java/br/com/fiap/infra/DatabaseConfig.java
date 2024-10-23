@@ -1,12 +1,23 @@
 package br.com.fiap.infra;
 
+import javax.xml.crypto.Data;
 import java.net.URI;
 
-public class DatabaseConfig {
+final class DatabaseConfig {
 
-    private final String URL = "jdbc:oracle:thin:@oracle.fiap.com.br:1571:orcl";
-    private final String USER = System.getenv("DB_USER_ORACLE");
-    private final String PASS = System.getenv("DB_PASSWORD_ORACLE");
+    private DatabaseConfig() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    static String getUrl(){
+        return "jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl";
+    }
+    static String getUser(){
+      return "pf1910";
+    }
+    static String getPass(){
+      return "fiap24";
+    }
 
 
 }
