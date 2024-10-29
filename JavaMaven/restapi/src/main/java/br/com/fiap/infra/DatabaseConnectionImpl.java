@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
-class DatabaseConnectionImpl implements DatabaseConnection {
+class       DatabaseConnectionImpl implements DatabaseConnection {
 
     private static DatabaseConnectionImpl instance;
 
